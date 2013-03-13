@@ -1,0 +1,5 @@
+color-theme
+auto-complete
+cedet
+ECB
+smex
