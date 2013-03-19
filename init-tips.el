@@ -1,6 +1,9 @@
 ;;屏蔽C-space
 (global-set-key (kbd "C-SPC") 'nil)
 
+;;回车自动缩进
+(define-key global-map (kbd "RET") 'newline-and-indent)
+
 ;;取消启动画面
 ;;(setq inhibit-startup-screen t)
 
