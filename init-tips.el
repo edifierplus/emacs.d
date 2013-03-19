@@ -1,13 +1,26 @@
 ;;屏蔽C-space
 (global-set-key (kbd "C-SPC") 'nil)
 
+;;取消启动画面
+;;(setq inhibit-startup-screen t)
+
+;;不使用对话框
+(setq use-file-dialog nil)
+(setq use-dialog-box nil)
+
+;;用户名与邮件
+(setq user-full-name "Geralt Chu")
+(setq user-mail-address "chujiyang@gmail.com") 
 
 ;;启动位置和尺寸
 (setq default-frame-alist
-  '((height . 40)(width . 110)(menubar-lines . 10)(tool-bar-lines . 0)))
+  '((height . 40)(width . 110)(menubar-lines . 10)))
+
+;;不要生成临时文件
+(setq-default make-backup-files nil)
 
 ;;设置字体
-(set-default-font "MONACO-11")
+;;(set-default-font "MONACO-11")
 (set-fontset-font t 'han (font-spec :family "YaHei Consolas Hybrid"))
 (setq face-font-rescale-alist '(("YaHei Consolas Hybrid" . 1.2)))
 
@@ -47,9 +60,6 @@
 
 ;;gdb-UI配置
 (setq gdb-many-windows t)
-
-;;取消启动画面
-;;(setq inhibit-startup-screen t)
 
 ;;全屏按键绑定
 (defun toggle-fullscreen ()

@@ -1,5 +1,2 @@
-color-theme
-auto-complete
+ecolor-theme
 cedet
-ECB
-smex
