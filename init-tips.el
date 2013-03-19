@@ -5,7 +5,7 @@
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
 ;;取消启动画面
-;;(setq inhibit-startup-screen t)
+;;(setq inhibit-startup-message t)
 
 ;;不使用对话框
 (setq use-file-dialog nil)
@@ -15,15 +15,21 @@
 (setq user-full-name "Geralt Chu")
 (setq user-mail-address "chujiyang@gmail.com") 
 
+;;在标题栏显示文件名
+(setq frame-title-format "Emacs@%b")
+
 ;;启动位置和尺寸
 (setq default-frame-alist
-  '((height . 40)(width . 110)(menubar-lines . 10)))
+  '((height . 40)(width . 120)(menubar-lines . 10)))
+  
+;;在左侧显示行号
+(global-linum-mode t)
+;;(linum-mode t)
 
 ;;不要生成临时文件
 (setq-default make-backup-files nil)
 
-;;设置字体
-;;(set-default-font "MONACO-11")
+;;设置中文字体
 (set-fontset-font t 'han (font-spec :family "YaHei Consolas Hybrid"))
 (setq face-font-rescale-alist '(("YaHei Consolas Hybrid" . 1.2)))
 

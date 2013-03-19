@@ -23,7 +23,6 @@
 (require 'init-ecb)
 (require 'init-highlight-symbol)
 (require 'init-ido)
-(require 'init-line-num)
 (require 'init-ibuffer)
 (require 'init-gui-frames)
 (require 'init-yasnippet)
