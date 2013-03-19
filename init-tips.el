@@ -5,7 +5,7 @@
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
 ;;取消启动画面
-;;(setq inhibit-startup-message t)
+(setq inhibit-startup-message t)
 
 ;;不使用对话框
 (setq use-file-dialog nil)

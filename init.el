@@ -19,7 +19,7 @@
 (require 'init-tips)
 (require 'init-auto-complete)
 (require 'init-cedet)
-(require 'init-color-theme)
+;;(require 'init-color-theme)
 (require 'init-ecb)
 (require 'init-highlight-symbol)
 (require 'init-ido)

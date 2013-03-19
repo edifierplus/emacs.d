@@ -1,3 +1,4 @@
+(setq byte-compile-warnings nil)
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/cedet/common/")
 (load-file "/usr/share/emacs/site-lisp/cedet/common/cedet.el")
 (require 'cedet)
