@@ -13,8 +13,8 @@
                    collecting (expand-file-name dir))
              load-path)))))
 
-(sanityinc/add-subdirs-to-load-path "~/.emacs.d/site-lisp/")
-(sanityinc/add-subdirs-to-load-path "~/.emacs.d/site-lisp/auto-complete/lib/")
+(sanityinc/add-subdirs-to-load-path "~/.emacs.d/plugins/")
+(sanityinc/add-subdirs-to-load-path "~/.emacs.d/plugins/auto-complete/lib/")
 
 
-(provide 'init-site-lisp)
+(provide 'init-plugins)

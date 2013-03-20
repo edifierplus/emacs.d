@@ -1,0 +1,24 @@
+[submodule "plugins/auto-complete"]
+	path = plugins/auto-complete
+	url = git@github.com:auto-complete/auto-complete.git
+[submodule "plugins/smex"]
+	path = plugins/smex
+	url = git@github.com:nonsequitur/smex.git
+[submodule "plugins/markdown-mode"]
+	path = plugins/markdown-mode
+	url = git@github.com:defunkt/markdown-mode.git
+[submodule "plugins/ibuffer-vc"]
+	path = plugins/ibuffer-vc
+	url = git@github.com:purcell/ibuffer-vc.git
+[submodule "plugins/ido-ubiquitous"]
+	path = plugins/ido-ubiquitous
+	url = git@github.com:technomancy/ido-ubiquitous.git
+[submodule "plugins/php-mode"]
+	path = plugins/php-mode
+	url = git@github.com:emacsmirror/php-mode.git
+[submodule "plugins/ecb"]
+	path = plugins/ecb
+	url = git@github.com:emacsmirror/ecb.git
+[submodule "plugins/yasnippet"]
+	path = plugins/yasnippet
+	url = git@github.com:capitaomorte/yasnippet.git

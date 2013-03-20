@@ -14,7 +14,7 @@
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features
 ;;----------------------------------------------------------------------------
-(require 'init-site-lisp)
+(require 'init-plugins)
 (require 'init-exec-path) ;; Set up $PATH
 (require 'init-tips)
 (require 'init-auto-complete)

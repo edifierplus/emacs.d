@@ -1,4 +1,3 @@
-;;(add-to-list 'load-path "/usr/share/emacs/site-lisp/ecb")
 ;;自动启动
 (require 'ecb)
 (setq ecb-auto-activate t)
