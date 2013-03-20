@@ -12,6 +12,7 @@
  '(fringe-mode 0 nil (fringe))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
+ '(speedbar-frame-parameters (quote ((minibuffer) (height . 50) (width . 20) (border-width . 0) (menu-bar-lines . 0) (tool-bar-lines . 0) (unsplittable . t) (left-fringe . 0) (font . "MONACO-10"))))
  '(speedbar-show-unknown-files t)
  '(speedbar-use-images nil)
  '(tool-bar-mode nil))
