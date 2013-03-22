@@ -5,7 +5,8 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (tango-dark)))
+ '(custom-enabled-themes (quote (dotshare)))
+ '(custom-safe-themes (quote ("3126286c8f46e987b9c43149851f8b4a60886a5236a1593aeae689e2c18c182e" default)))
  '(ecb-options-version "2.40")
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2))
  '(fci-rule-color "#073642")
