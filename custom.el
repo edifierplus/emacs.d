@@ -6,7 +6,7 @@
  '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
  '(ansi-term-color-vector ["#151515" "#e84f4f" "#b8d68c" "#e1aa5d" "#7dc1cf" "#9b64fb" "#6d878d" "#d7d0c7"])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (zenburn)))
+ '(custom-enabled-themes (quote (tango-dark)))
  '(custom-safe-themes (quote ("f5e56ac232ff858afb08294fc3a519652ce8a165272e3c65165c42d6fe0262a0" "3126286c8f46e987b9c43149851f8b4a60886a5236a1593aeae689e2c18c182e" default)))
  '(ecb-options-version "2.40")
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2))

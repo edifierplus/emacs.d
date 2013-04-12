@@ -29,6 +29,9 @@
 ;;不要生成临时文件
 (setq-default make-backup-files nil)
 
+;;选中输入为覆盖
+(delete-selection-mode t)
+
 ;;设置中文字体
 (set-fontset-font t 'han (font-spec :family "YaHei Consolas Hybrid"))
 (setq face-font-rescale-alist '(("YaHei Consolas Hybrid" . 1.2)))

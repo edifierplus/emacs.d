@@ -13,7 +13,7 @@
 ;;(semantic-load-enable-guady-code-helpers)
 (semantic-load-enable-excessive-code-helpers)
 ;;(semantic-load-enable-semantic-debugging-helpers)
-(global-semantic-highlight-edits-mode 1)
+;;(global-semantic-highlight-edits-mode 1)
 
 ;;Enable SRecode (Template management) minor-mode
 (global-srecode-minor-mode 1)
