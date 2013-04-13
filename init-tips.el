@@ -29,6 +29,12 @@
 ;;不要生成临时文件
 (setq-default make-backup-files nil)
 
+;;显示最近访问文件
+(require 'recentf)
+(setq recentf-max-saved-items 200
+      recentf-max-menu-items 15)
+(recentf-mode t)
+
 ;;选中输入为覆盖
 (delete-selection-mode t)
 

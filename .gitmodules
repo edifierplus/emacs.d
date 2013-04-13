@@ -25,3 +25,6 @@
 [submodule "plugins/highlight-symbol"]
 	path = plugins/highlight-symbol
 	url = git@github.com:nschum/highlight-symbol.el.git
+[submodule "plugins/django-mode"]
+	path = plugins/django-mode
+	url = git@github.com:myfreeweb/django-mode.git

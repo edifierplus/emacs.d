@@ -1,0 +1,10 @@
+mkdir templates
+cd templates/
+ls
+touch index.html
+rm index.html 
+mkdir polls
+cd polls/
+ls
+touch index.html
+emacs index.html 
