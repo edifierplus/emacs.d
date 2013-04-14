@@ -7,7 +7,7 @@
 ;;(require 'auto-complete-verilog)
 ;;(require 'auto-complete+)
 ;;(require 'util)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins/auto-complete/ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins/auto-complete/dict")
 (ac-config-default)
 (setq ac-auto-show-menu 0.01)
 

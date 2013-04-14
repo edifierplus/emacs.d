@@ -15,6 +15,6 @@
 
 (sanityinc/add-subdirs-to-load-path "~/.emacs.d/plugins/")
 (sanityinc/add-subdirs-to-load-path "~/.emacs.d/plugins/auto-complete/lib/")
-
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/")
 
 (provide 'init-plugins)
