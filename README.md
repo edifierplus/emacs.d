@@ -1,4 +1,4 @@
 emacs.d
 =======
 
-This is my profile for emacs
+This is my configuration for emacs
