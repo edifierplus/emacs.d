@@ -19,12 +19,13 @@
 (require 'init-tips)
 (require 'init-auto-complete)
 (require 'init-cedet)
-(require 'init-ecb)
+;(require 'init-ecb)
 (require 'init-highlight-symbol)
 (require 'init-ido)
 (require 'init-ibuffer)
 (require 'init-gui-frames)
 (require 'init-yasnippet)
+(require 'init-fill-column-indicator)
 
 
 ;;----------------------------------------------------------------------------

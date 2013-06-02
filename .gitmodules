@@ -28,3 +28,6 @@
 [submodule "plugins/pony-mode"]
 	path = plugins/pony-mode
 	url = git@github.com:davidmiller/pony-mode.git
+[submodule "plugins/Fill-Column-Indicator"]
+	path = plugins/Fill-Column-Indicator
+	url = git@github.com:alpaker/Fill-Column-Indicator.git

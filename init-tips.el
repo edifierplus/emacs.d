@@ -1,8 +1,65 @@
+;;用S-RET在行下方插入新行
+(defun smart-open-line ()
+  (interactive)
+  (move-end-of-line nil)
+  (newline-and-indent))
+(global-set-key [(shift return)] 'smart-open-line)
+
+;;保持括号成对
+(electric-pair-mode +1)
+
+;;用C-S-UP/DOWN将整行上下移动
+(defun move-line-up ()
+  "Move up the current line."
+  (interactive)
+  (transpose-lines 1)
+  (forward-line -2)
+  (indent-according-to-mode))
+
+(defun move-line-down ()
+  "Move down the current line."
+  (interactive)
+  (forward-line 1)
+  (transpose-lines 1)
+  (forward-line -1)
+  (indent-according-to-mode))
+
+(global-set-key [(control shift up)]  'move-line-up)
+(global-set-key [(control shift down)]  'move-line-down)
+
+;;将C-Backspace设定为删除整行及换行符
+(global-set-key (kbd "C-<backspace>") 'kill-whole-line)
+
+;;启动驼峰式单词识别
+(add-hook 'prog-mode-hook 'subword-mode)
+
+;;智能移动到行首
+(defun smarter-move-beginning-of-line (arg)
+  (interactive "^p")
+  (setq arg (or arg 1))
+  ;; Move lines first
+  (when (/= arg 1)
+    (let ((line-move-visual nil))
+      (forward-line (1- arg))))
+  (let ((orig-point (point)))
+    (back-to-indentation)
+    (when (= orig-point (point))
+      (move-beginning-of-line 1))))
+  ;; remap C-a to `smarter-move-beginning-of-line'
+(global-set-key [remap move-beginning-of-line]
+                'smarter-move-beginning-of-line)
+
+;;设置C-^为删除行末换行符
+(defun top-join-line ()
+  (interactive)
+  (delete-indentation 1))
+(global-set-key (kbd "C-^") 'top-join-line)
+
 ;;屏蔽C-space
 (global-set-key (kbd "C-SPC") 'nil)
 
 ;;回车自动缩进
-(define-key global-map (kbd "RET") 'newline-and-indent)
+(electric-indent-mode +1)
 
 ;;取消启动画面
 (setq inhibit-startup-message t)
@@ -15,8 +72,11 @@
 (setq user-full-name "Geralt Chu")
 (setq user-mail-address "chujiyang@gmail.com") 
 
-;;在标题栏显示文件名
-(setq frame-title-format "Emacs@%b")
+;;在标题栏显示路径和文件名
+(setq frame-title-format
+      '((:eval (if (buffer-file-name)
+                   (abbreviate-file-name (buffer-file-name))
+                 "%b"))))
 
 ;;启动位置和尺寸
 (setq default-frame-alist
@@ -35,7 +95,7 @@
       recentf-max-menu-items 15)
 (recentf-mode t)
 
-;;选中输入为覆盖
+;;选中输入时覆盖
 (delete-selection-mode t)
 
 ;;设置中文字体
