@@ -1,3 +1,10 @@
+;;用C-RET将本行裂开，并插入新行
+(defun break-open-line ()
+  (interactive)
+  (open-line 1)
+  (newline-and-indent))
+(global-set-key [(ctrl return)] 'break-open-line)
+
 ;;用S-RET在行下方插入新行
 (defun smart-open-line ()
   (interactive)
