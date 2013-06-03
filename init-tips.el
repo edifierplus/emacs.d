@@ -146,15 +146,15 @@
 ;;gdb-UI配置
 (setq gdb-many-windows t)
 
-;;全屏按键绑定
-(defun toggle-fullscreen ()
-  "Toggle full screen on X11"
-  (interactive)
-  (when (eq window-system 'x)
-    (set-frame-parameter
-     nil 'fullscreen
-     (when (not (frame-parameter nil 'fullscreen)) 'fullboth))))
-(global-set-key [f11] 'toggle-fullscreen)
+;;全屏按键绑定(seems out of date)
+;;(defun toggle-fullscreen ()
+;;  "Toggle full screen on X11"
+;;  (interactive)
+;;  (when (eq window-system 'x)
+;;    (set-frame-parameter
+;;     nil 'fullscreen
+;;     (when (not (frame-parameter nil 'fullscreen)) 'fullboth))))
+;;(global-set-key [f11] 'toggle-fullscreen)
 
 
 (provide 'init-tips)

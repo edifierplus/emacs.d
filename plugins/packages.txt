@@ -1,0 +1,5 @@
+Setup the packages manually:
+python2-rope
+python2-ropemacs
+python2-ropemode
+pymacs
