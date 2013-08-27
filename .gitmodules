@@ -31,6 +31,3 @@
 [submodule "plugins/Fill-Column-Indicator"]
 	path = plugins/Fill-Column-Indicator
 	url = git@github.com:alpaker/Fill-Column-Indicator.git
-[submodule "plugins/emacs-flymake"]
-	path = plugins/emacs-flymake
-	url = git@github.com:illusori/emacs-flymake.git
