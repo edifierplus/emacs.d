@@ -37,6 +37,15 @@
   (newline-and-indent))
 (global-set-key [(shift return)] 'smart-open-line)
 
+;;Use M-o to creat a new line above
+(defun smart-open-line-above ()
+  (interactive)
+  (move-beginning-of-line nil)
+  (newline-and-indent)
+  (forward-line -1)
+  (indent-according-to-mode))
+(global-set-key (kbd "M-o") 'smart-open-line-above)
+
 ;;保持括号成对
 (electric-pair-mode +1)
 
