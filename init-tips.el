@@ -14,8 +14,7 @@
   (forward-char 1)
   (search-forward-regexp
     (eval-when-compile
-      (regexp-opt '(")" "]" "}" ">" "〕" "】" "〗" "〉" "》" "」" "』" "”" "’" "›" "»"))) nil t 1)
-  (backward-char 1))
+      (regexp-opt '(")" "]" "}" ">" "〕" "】" "〗" "〉" "》" "」" "』" "”" "’" "›" "»"))) nil t 1))
 
 (global-set-key (kbd "<home>") 'backward-open-bracket)
 (global-set-key (kbd "<end>") 'forward-close-bracket)
