@@ -1,3 +1,29 @@
+;;Use Home End to move around brackets
+(defun backward-open-bracket ()
+  "Move cursor to the previous occurrence of left bracket or quotation mark."
+  (interactive)
+  (backward-char 1)
+  (search-backward-regexp
+    (eval-when-compile
+      (regexp-opt '("(" "{" "[" "<" "〔" "【" "〖" "〈" "《" "「" "『" "“" "‘" "‹" "«"))) nil t 1)
+  (forward-char 1))
+
+(defun forward-close-bracket ()
+  "Move cursor to the next occurrence of right bracket or quotation mark."
+  (interactive)
+  (forward-char 1)
+  (search-forward-regexp
+    (eval-when-compile
+      (regexp-opt '(")" "]" "}" ">" "〕" "】" "〗" "〉" "》" "」" "』" "”" "’" "›" "»"))) nil t 1)
+  (backward-char 1))
+
+(global-set-key (kbd "<home>") 'backward-open-bracket)
+(global-set-key (kbd "<end>") 'forward-close-bracket)
+
+;;Use PgUp PgDn to move around paragraphs
+(global-set-key (kbd "<prior>") 'backward-paragraph)
+(global-set-key (kbd "<next>") 'forward-paragraph)
+
 ;;用C-RET将本行裂开，并插入新行
 (defun break-open-line ()
   (interactive)
@@ -76,7 +102,7 @@
 (setq use-dialog-box nil)
 
 ;;用户名与邮件
-(setq user-full-name "Geralt Chu")
+(setq user-full-name "Jiyang Chu")
 (setq user-mail-address "chujiyang@gmail.com") 
 
 ;;在标题栏显示路径和文件名
