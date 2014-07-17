@@ -140,8 +140,8 @@
 (delete-selection-mode t)
 
 ;;设置中文字体
-(set-fontset-font t 'han (font-spec :family "YaHei Consolas Hybrid"))
-(setq face-font-rescale-alist '(("YaHei Consolas Hybrid" . 1.2)))
+;(set-fontset-font t 'han (font-spec :family "YaHei Consolas Hybrid"))
+;(setq face-font-rescale-alist '(("YaHei Consolas Hybrid" . 1.2)))
 
 ;;设置默认工作目录
 (setq default-directory "~/")

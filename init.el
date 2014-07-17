@@ -18,7 +18,7 @@
 (require 'init-exec-path) ;; Set up $PATH
 (require 'init-tips)
 (require 'init-auto-complete)
-(require 'init-cedet)
+;(require 'init-cedet)
 ;(require 'init-ecb)
 (require 'init-highlight-symbol)
 (require 'init-ido)
