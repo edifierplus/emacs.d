@@ -1,5 +1,6 @@
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
+(setq warning-minimum-level :error)
 (add-to-list 'load-path (expand-file-name "~/.emacs.d"))
 
 
@@ -9,7 +10,7 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (when (file-exists-p custom-file)
   (load custom-file))
-  
+
 
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features
