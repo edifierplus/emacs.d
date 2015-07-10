@@ -1,3 +1,6 @@
+;; tell emacs to enter "octave-mode" for .m file
+(setq auto-mode-alist (cons '("\\.m" . octave-mode) auto-mode-alist))
+
 ;;Use Home End to move around brackets
 (defun backward-open-bracket ()
   "Move cursor to the previous occurrence of left bracket or quotation mark."
